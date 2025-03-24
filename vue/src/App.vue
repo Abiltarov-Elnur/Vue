@@ -1,10 +1,17 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+export default {
+  data() {
+    return {
+      name: 'John',
+      surn: 'Smit'
+    };
+  }
+};
 </script>
 
 <template>
-  <span> Hello wrld! </span>
+  <h1>{{ name }}</h1>
+  <h2>{{ surn }}</h2>
 </template>
 
 <style scoped>
