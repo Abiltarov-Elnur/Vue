@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  {{ obj['x'] }}
+  {{ obj['y'] }}
 </template>
 
 <style scoped>
