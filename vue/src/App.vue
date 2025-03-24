@@ -2,15 +2,15 @@
 export default {
   data() {
 	return {
-		text: 'page',
-		href: '/page.html',
+		obj: {x: 1, y: 2, z: 3},
 	}
+
 }
 };
 </script>
 
 <template>
-  <a :href="href">page</a>
+  {{ obj['x'] }}
 </template>
 
 <style scoped>
