@@ -6,7 +6,9 @@ export default {
 	}
   },
   methods: {
-    
+    hide: function() {
+		this.vifible = false;
+	}
   },
   computed: {
     full: function() {
@@ -17,6 +19,7 @@ export default {
 </script>
 
 <template>
+  <button @click="hide">hide</button>
 	<p v-if="vifible">text</p>
 </template>
 
