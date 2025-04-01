@@ -2,13 +2,13 @@
 export default {
   data() {
     return {
-		vifible: true,
+		visible: true,
 	}
   },
   methods: {
-    hide: function() {
-		this.vifible = false;
-	}
+    toggle: function() {
+	this.visible = !this.visible;
+}
   },
   computed: {
     full: function() {
@@ -19,8 +19,8 @@ export default {
 </script>
 
 <template>
-  <button @click="hide">hide</button>
-	<p v-if="vifible">text</p>
+  <button @click="toggle">toggle</button>
+	<p v-if="visible">text</p>
 </template>
 
 <style scoped>
