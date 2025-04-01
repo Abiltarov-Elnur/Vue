@@ -4,13 +4,18 @@ export default {
 	return {
 		obj: {x: 1, y: 2, z: 3},
 	}
+  },
+  methods: {
+	show: function() {
+		alert('!');
+	}
+  }
 
-}
 };
 </script>
 
 <template>
-  {{ obj['y'] }}
+  {{ show() }}
 </template>
 
 <style scoped>
