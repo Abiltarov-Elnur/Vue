@@ -2,12 +2,13 @@
 export default {
   data() {
 	return {
-		obj: {x: 1, y: 2, z: 3},
+		num1: 1,
+		num2: 2,
 	}
   },
   methods: {
 	show: function() {
-		alert('!');
+		alert(this.num1 + this.num2);
 	}
   }
 
@@ -15,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <button @click="show">text</button>
+  {{ show() }}
 </template>
 
 <style scoped>
