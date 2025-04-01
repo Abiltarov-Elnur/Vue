@@ -6,8 +6,8 @@ export default {
 	}
   },
   methods: {
-    show: function(str) {
-		alert(str);
+    changi: function() {
+		this.text = 'yyy';
 	}
   }
 
@@ -15,8 +15,8 @@ export default {
 </script>
 
 <template>
-  <button @click="show('text1')">btn1</button>
-	<button @click="show('text2')">btn2</button>
+  {{ text }}
+	<button @click="changi">text</button>
 </template>
 
 <style scoped>
