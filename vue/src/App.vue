@@ -2,13 +2,16 @@
 export default {
   data() {
 	return {
-		num1: 1,
-		num2: 2,
+		text: 'abvs'
 	}
   },
   methods: {
-	show: function() {
-		alert(this.num1 + this.num2);
+    show: function() {
+		let text = this.cape(this.text);
+		alert(text);
+	},
+	cape: function(str) {
+		return str[0].toUpperCase() + str.slice(1);
 	}
   }
 
