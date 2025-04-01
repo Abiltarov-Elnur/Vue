@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-		visible: true,
+		isAuth: true,
 	}
   },
   methods: {
@@ -19,9 +19,8 @@ export default {
 </script>
 
 <template>
-  <button @click="toggle">
-		{{ visible ? 'hide' : 'show' }}
-	</button>
+	<p v-if="isAuth">+++</p>
+	<p v-else>---</p>
 </template>
 
 <style scoped>
