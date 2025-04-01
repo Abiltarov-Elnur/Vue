@@ -19,8 +19,9 @@ export default {
 </script>
 
 <template>
-  <button @click="toggle">toggle</button>
-	<p v-if="visible">text</p>
+  <button @click="toggle">
+		{{ visible ? 'hide' : 'show' }}
+	</button>
 </template>
 
 <style scoped>
