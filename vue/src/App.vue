@@ -1,22 +1,26 @@
 <script>
 export default {
   data() {
-	return {
-		text: 'abvs'
+    return {
+		name: 'john',
+		surn: 'smit',
 	}
   },
   methods: {
-    changi: function() {
-		this.text = 'yyy';
+    
+  },
+  computed: {
+    full: function() {
+		return this.name + ' ' + this.surn;
 	}
-  }
-
+}
 };
 </script>
 
 <template>
-  {{ text }}
-	<button @click="changi">text</button>
+  <p>{{ name }}</p>
+	<p>{{ surn }}</p>
+	<p>{{ full }}</p>
 </template>
 
 <style scoped>
