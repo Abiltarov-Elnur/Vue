@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  {{ show() }}
+  <button @click="show">text</button>
 </template>
 
 <style scoped>
