@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-		isAuth: true,
+		num: 2, // пусть сейчас там 3
 	}
   },
   methods: {
@@ -19,8 +19,9 @@ export default {
 </script>
 
 <template>
-	<p v-if="isAuth">+++</p>
-	<p v-else>---</p>
+	<p v-if="num === 1">one</p>
+	<p v-if="num === 2">two</p>
+	<p v-if="num === 3">three</p>
 </template>
 
 <style scoped>
