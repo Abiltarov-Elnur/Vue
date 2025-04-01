@@ -2,8 +2,7 @@
 export default {
   data() {
     return {
-		name: 'john',
-		surn: 'smit',
+		vifible: true,
 	}
   },
   methods: {
@@ -18,9 +17,7 @@ export default {
 </script>
 
 <template>
-  <p>{{ name }}</p>
-	<p>{{ surn }}</p>
-	<p>{{ full }}</p>
+	<p v-if="vifible">text</p>
 </template>
 
 <style scoped>
