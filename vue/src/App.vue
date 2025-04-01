@@ -6,12 +6,8 @@ export default {
 	}
   },
   methods: {
-    show: function() {
-		let text = this.cape(this.text);
-		alert(text);
-	},
-	cape: function(str) {
-		return str[0].toUpperCase() + str.slice(1);
+    show: function(str) {
+		alert(str);
 	}
   }
 
@@ -19,7 +15,8 @@ export default {
 </script>
 
 <template>
-  {{ show() }}
+  <button @click="show('text1')">btn1</button>
+	<button @click="show('text2')">btn2</button>
 </template>
 
 <style scoped>
