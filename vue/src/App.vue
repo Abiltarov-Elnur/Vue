@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-		num: 2, // пусть сейчас там 3
+		num: 4, // пусть сейчас там 3
 	}
   },
   methods: {
@@ -20,8 +20,8 @@ export default {
 
 <template>
 	<p v-if="num === 1">one</p>
-	<p v-if="num === 2">two</p>
-	<p v-if="num === 3">three</p>
+	<p v-else-if="num === 2">two</p>
+	<p v-else>three</p>
 </template>
 
 <style scoped>
