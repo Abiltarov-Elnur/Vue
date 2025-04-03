@@ -2,7 +2,7 @@
 export default {
   data() {
 	return {
-		num: 2,
+		arr: [1, 2, 3, 4, 5],
 	}
 }
 };
@@ -12,9 +12,13 @@ export default {
 </script>
 
 <template>
-  <p v-for="num in 10">
-		{{ num }}
-	</p>
+  <ul>
+		<template v-for="elem in arr">
+			<li v-if="elem % 2 === 0">
+				{{ elem }}
+			</li>
+		</template>
+	</ul>
 </template>
 
 <style scoped>
