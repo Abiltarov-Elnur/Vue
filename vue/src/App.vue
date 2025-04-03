@@ -1,28 +1,34 @@
 <script>
 export default {
   data() {
-    return {
-      arr: [1, 2, 3],
-	}
-  },
-  methods: {
-    toggle: function() {
-	this.visible = !this.visible;
-}
-  },
-  computed: {
-    full: function() {
-		return this.name + ' ' + this.surn;
+	return {
+		users: [
+			{
+				name: 'name1',
+				surn: 'surn1',
+			},
+			{
+				name: 'name2',
+				surn: 'surn2',
+			},
+			{
+				name: 'name3',
+				surn: 'surn3',
+			},
+		]
 	}
 }
 };
+
+
+
 </script>
 
 <template>
-  	<template v-for="elem in arr">
-		<p>{{ elem }}</p>
-		<hr>
-	</template>
+  <p v-for="user in users">
+		{{ user.name }}
+		{{ user.surn }}
+	</p>
 </template>
 
 <style scoped>
