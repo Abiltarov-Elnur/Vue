@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-		num: 4, // пусть сейчас там 3
+      arr: ['a', 'b', 'c'],
 	}
   },
   methods: {
@@ -19,11 +19,9 @@ export default {
 </script>
 
 <template>
-  <template v-if = 'num==4'>
-    <p v-show = false>+++</p>
-		<p>+++</p>
-		<p>+++</p>
-  </template>
+  <p v-for = "elem in arr">{{ elem }}</p>
+	<p>+++</p>
+	<p>+++</p>
 </template>
 
 <style scoped>
