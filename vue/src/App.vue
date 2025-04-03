@@ -2,20 +2,7 @@
 export default {
   data() {
 	return {
-		users: [
-			{
-				name: 'name1',
-				surn: 'surn1',
-			},
-			{
-				name: 'name2',
-				surn: 'surn2',
-			},
-			{
-				name: 'name3',
-				surn: 'surn3',
-			},
-		]
+		num: 2,
 	}
 }
 };
@@ -25,9 +12,8 @@ export default {
 </script>
 
 <template>
-  <p v-for="user in users">
-		{{ user.name }}
-		{{ user.surn }}
+  <p v-for="num in 10">
+		{{ num }}
 	</p>
 </template>
 
