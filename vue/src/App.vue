@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      obj: {a: 1, b: 2, c: 3},
+      arr: [1, 2, 3],
 	}
   },
   methods: {
@@ -19,11 +19,10 @@ export default {
 </script>
 
 <template>
-  	<p v-for="(elem, key, index) in obj">
-		{{ index }}
-		{{ key }}
-		{{ elem }}
-	</p>
+  	<template v-for="elem in arr">
+		<p>{{ elem }}</p>
+		<hr>
+	</template>
 </template>
 
 <style scoped>
