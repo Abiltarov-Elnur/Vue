@@ -19,9 +19,11 @@ export default {
 </script>
 
 <template>
-	<p v-if="num === 1">one</p>
-	<p v-else-if="num === 2">two</p>
-	<p v-else>three</p>
+  <template v-if = 'num==4'>
+    <p>+++</p>
+		<p>+++</p>
+		<p>+++</p>
+  </template>
 </template>
 
 <style scoped>
