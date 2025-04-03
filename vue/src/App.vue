@@ -20,7 +20,7 @@ export default {
 
 <template>
   <template v-if = 'num==4'>
-    <p>+++</p>
+    <p v-show = false>+++</p>
 		<p>+++</p>
 		<p>+++</p>
   </template>
