@@ -19,9 +19,7 @@ export default {
 </script>
 
 <template>
-  <p v-for = "elem in arr">{{ elem }}</p>
-	<p>+++</p>
-	<p>+++</p>
+  <p v-for = "(elem, key) in arr">{{ key + 1 }} {{ elem }}</p>
 </template>
 
 <style scoped>
