@@ -36,6 +36,12 @@ header {
   line-height: 1.5;
 }
 
+
+p{
+  color:red
+}
+
+
 .logo {
   display: block;
   margin: 0 auto 2rem;
