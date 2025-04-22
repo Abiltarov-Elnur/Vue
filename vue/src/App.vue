@@ -2,20 +2,7 @@
 export default {
   data() {
 	return {
-		products: [
-			{
-				id: 1,
-				name: 'product1',
-			},
-			{
-				id: 2,
-				name: 'product2',
-			},
-			{
-				id: 3,
-				name: 'product3',
-			},
-		]
+		str: 'active valid',
 	}
 }
 };
@@ -25,10 +12,7 @@ export default {
 </script>
 
 <template>
-  <p v-for="user in products" :key="user.id">
-		{{ user.name }}
-		{{ user.surn }}
-	</p>
+  <p :class="str">text</p>
 </template>
 
 <style scoped>
