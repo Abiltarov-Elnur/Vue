@@ -2,7 +2,10 @@
 export default {
   data() {
 	return {
-		str: 'active valid',
+		obj: {
+			done: true,
+			selected:  false,
+		},
 	}
 }
 };
@@ -12,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <p :class="str">text</p>
+  <p :class="obj">text</p>
 </template>
 
 <style scoped>
