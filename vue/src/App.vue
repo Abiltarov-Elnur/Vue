@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p :class="styles">text</p>
+    <p :class="{active: true, valid: false}">text</p>
     <button @click="setDone">Зачеркнуть</button>
   </div>
 </template>
