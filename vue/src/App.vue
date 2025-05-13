@@ -1,24 +1,19 @@
 <template>
   <div>
-    <p :class="{active: true, valid: false}">text</p>
-    <button @click="setDone">Зачеркнуть</button>
+    <p :class="{active: isActive, error: hasError}">
+		text
+	</p>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      styles: {
-        done: false,
-      },
-    };
-  },
-  methods: {
-    setDone() {
-      this.styles.done = true;
-    },
-  },
+	return {
+		isActive: true,
+		hasError: true,
+	}
+},
 };
 </script>
 
