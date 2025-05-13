@@ -1,54 +1,34 @@
+<template>
+  <div>
+    <p :class="styles">text</p>
+    <button @click="setDone">Зачеркнуть</button>
+  </div>
+</template>
+
 <script>
 export default {
   data() {
-	return {
-		obj: {
-			done: true,
-			selected:  false,
-		},
-	}
-}
+    return {
+      styles: {
+        done: false,
+      },
+    };
+  },
+  methods: {
+    setDone() {
+      this.styles.done = true;
+    },
+  },
 };
-
-
-
 </script>
 
-<template>
-  <p :class="obj">text</p>
-</template>
-
 <style scoped>
-header {
-  line-height: 1.5;
+p {
+  color: red;
 }
 
-
-p{
-  color:red
-}
-
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+/* Класс done перечеркивает текст */
+p.done {
+  text-decoration: line-through;
 }
 </style>
