@@ -1,13 +1,14 @@
 <template>
-	<textarea v-model="text"></textarea>
-	<p>{{ text }}</p>
+	<input type="checkbox" v-model="arr" value="v1">
+	<input type="checkbox" v-model="arr" value="v2">
+	<input type="checkbox" v-model="arr" value="v3">
 </template>
 
 <script>
 export default {
   data() {
 	return {
-		text: '',
+		arr: [],
 	}
 },
 };
