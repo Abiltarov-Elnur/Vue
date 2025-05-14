@@ -1,17 +1,13 @@
 <template>
-  <div>
-    <p :class="{active: isActive, error: hasError}">
-		text
-	</p>
-  </div>
+	<input v-model="message">
+	<p>{{ message }}</p>
 </template>
 
 <script>
 export default {
   data() {
 	return {
-		isActive: true,
-		hasError: true,
+		message: 'hello',
 	}
 },
 };
