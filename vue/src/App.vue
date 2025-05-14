@@ -1,14 +1,17 @@
 <template>
-	<input type="checkbox" v-model="arr" value="v1">
-	<input type="checkbox" v-model="arr" value="v2">
-	<input type="checkbox" v-model="arr" value="v3">
+	<select v-model="selected">
+		<option v-for="option in options">{{ option }}</option>
+	</select>
+	
+	<p>{{ selected }}</p>
 </template>
 
 <script>
 export default {
   data() {
 	return {
-		arr: [],
+		selected: 'value1',
+		options: ['value1', 'value2', 'value3'],
 	}
 },
 };
