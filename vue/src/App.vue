@@ -1,17 +1,12 @@
 <template>
-	<select v-model="selected">
-		<option v-for="option in options">{{ option }}</option>
-	</select>
-	
-	<p>{{ selected }}</p>
+	<button v-bind:disabled="isDisabled">btn</button>
 </template>
 
 <script>
 export default {
   data() {
 	return {
-		selected: 'value1',
-		options: ['value1', 'value2', 'value3'],
+		isDisabled: true,
 	}
 },
 };
