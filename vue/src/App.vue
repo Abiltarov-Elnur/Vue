@@ -1,13 +1,13 @@
 <template>
-	<input v-model="message">
-	<p>{{ message }}</p>
+	<textarea v-model="text"></textarea>
+	<p>{{ text }}</p>
 </template>
 
 <script>
 export default {
   data() {
 	return {
-		message: 'hello',
+		text: '',
 	}
 },
 };
