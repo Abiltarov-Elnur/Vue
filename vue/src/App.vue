@@ -1,17 +1,16 @@
 <template>
-	<User name="john" surn="smit" />
-  {{ name }}
-	{{ surn }}
+	<User :name="name" :surn="surn" />
 </template>
 
 <script>
 	export default {
-		props: ['name', 'surn'],
+		
 		data() {
-			return {
-				
-			}
-		}
+	return {
+		name: 'john',
+		surn: 'smit',
+	}
+}
 	}
 </script>
 
